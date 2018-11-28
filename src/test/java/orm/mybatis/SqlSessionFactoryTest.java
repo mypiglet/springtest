@@ -34,13 +34,13 @@ public class SqlSessionFactoryTest {
 	@BeforeTest(enabled = false)
 	public void sqlSessionFactoryTest() {
 
-		String resource = "/mybatis/mybatis-config.xml";
+		String resource = "/orm/mybatis/mybatis-config.xml";
 		InputStream is = SqlSessionFactoryTest.class.getResourceAsStream(resource);
 		sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
 
 	}
 
-	@BeforeTest(enabled = true)
+	@BeforeTest(enabled = false)
 	public void sqlSessionFactoryTest2() {
 
 		Properties pro = new Properties();

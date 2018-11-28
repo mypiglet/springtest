@@ -41,7 +41,7 @@ public class JdbcTemplateTest extends DataSourceTest {
 	private final static String SQL_UPDATE_USER = "UPDATE demo_user SET NAME='pp2' WHERE PASSWORD='123'";
 	private final static String SQL_SELECT_USER = "SELECT * FROM demo_user WHERE ID=?";
 
-	@BeforeTest
+	@BeforeTest(enabled = false)
 	public void test() {
 		jdbc = new JdbcTemplate(this.getDataSource());
 		Assert.assertNotNull(jdbc);
@@ -205,7 +205,7 @@ public class JdbcTemplateTest extends DataSourceTest {
 
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void queryTest4() {
 		
 		List<User> userList = this.jdbc.query("SELECT * FROM demo_user WHERE PASSWORD=?", new PreparedStatementSetter(){

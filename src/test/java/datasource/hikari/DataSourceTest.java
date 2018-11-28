@@ -38,7 +38,7 @@ public class DataSourceTest {
 
 		String path = DataSourceTest.class.getResource("/").toString().replaceAll("file:", "");
 		// Thread.currentThread().getContextClassLoader().getResource("/").getPath();
-		System.setProperty("hikaricp.configurationFile", path + "hikari.properties");
+		System.setProperty("hikaricp.configurationFile", path + "datasource/hikari/hikari.properties");
 		dataSource = new HikariDataSource();
 
 	}
@@ -56,7 +56,7 @@ public class DataSourceTest {
 
 	}
 
-	@BeforeTest
+	@BeforeTest(enabled = false)
 	public void test3() throws SQLException {
 
 		HikariConfig config = new HikariConfig();
@@ -74,7 +74,7 @@ public class DataSourceTest {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void connectionTest() throws SQLException {
 		Connection conn = dataSource.getConnection();
 		Assert.assertNotNull(conn);

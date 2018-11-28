@@ -19,7 +19,7 @@ public class SqlSessionTest extends SqlSessionFactoryTest {
 		Assert.assertNotNull(user);
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test2() {
 		SqlSession sqlSession = this.getSqlSessionFactory().openSession();
 		UserMapper userMapper = sqlSession.getMapper(UserMapper.class);

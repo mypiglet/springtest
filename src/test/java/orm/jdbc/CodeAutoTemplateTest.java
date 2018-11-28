@@ -26,7 +26,7 @@ public class CodeAutoTemplateTest extends DataSourceTest {
 	private JdbcOperations jdbc;
 	private NamedParameterJdbcOperations namedJdbc;
 
-	@BeforeTest
+	@BeforeTest(enabled = false)
 	public void test() {
 		jdbc = new JdbcTemplate(this.getDataSource());
 		namedJdbc = new NamedParameterJdbcTemplate(this.getDataSource());
@@ -56,7 +56,7 @@ public class CodeAutoTemplateTest extends DataSourceTest {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void codeAutoTest4() {
 
 		User user = new User();

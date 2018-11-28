@@ -21,7 +21,7 @@ public class TransactionTemplateTest extends DataSourceTest {
 	private TransactionTemplate transactionTemplate;
 	private JdbcOperations jdbc;
 
-	@BeforeTest
+	@BeforeTest(enabled = false)
 	public void transactionTemplateTest() {
 		jdbc = new JdbcTemplate(this.getDataSource());
 		this.transactionTemplate = new TransactionTemplate(new DataSourceTransactionManager(this.getDataSource()));
@@ -30,7 +30,7 @@ public class TransactionTemplateTest extends DataSourceTest {
 		Assert.assertNotNull(transactionTemplate);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void test() {
 
 		final String sql1 = "UPDATE demo_user SET NAME='pp21' WHERE ID='1'";

@@ -24,7 +24,7 @@ public class NamedParameterJdbcTemplateTest extends DataSourceTest {
 
 	private NamedParameterJdbcOperations namedJdbc;
 
-	@BeforeTest
+	@BeforeTest(enabled = false)
 	public void test() {
 		namedJdbc = new NamedParameterJdbcTemplate(this.getDataSource());
 		Assert.assertNotNull(namedJdbc);
@@ -42,7 +42,7 @@ public class NamedParameterJdbcTemplateTest extends DataSourceTest {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void namedJdbcTest3() {
 
 		MapSqlParameterSource mapSqlParameterSource = new MapSqlParameterSource();

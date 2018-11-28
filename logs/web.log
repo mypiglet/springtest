@@ -1,0 +1,10 @@
+2018-11-27 at 21:31:02 GMT+08:00 INFO  log.log4j.log4jTest 51 test - 输出日志信息！
+2018-11-28 at 09:22:59 GMT+08:00 ERROR log.log4j.log4jTest 73 test3 - 自定义pattern参数输出
+2018-11-28 at 09:36:59 GMT+08:00 ERROR log.log4j.log4jTest 73 test3 - 自定义pattern参数输出
+2018-11-28 at 09:47:48 GMT+08:00 ERROR log.log4j.log4jTest 74 test3 - 自定义pattern参数输出
+2018-11-28 at 09:48:26 GMT+08:00 ERROR log.log4j.log4jTest 76 test3 - 自定义pattern参数输出
+2018-11-28 at 10:05:21 GMT+08:00 ERROR log.log4j.log4jTest 80 test3 - 自定义pattern参数输出
+2018-11-28 at 10:39:10 GMT+08:00 ERROR log.log4j.log4jTest 83 test3 - 自定义pattern参数输出
+2018-11-28 at 10:39:56 GMT+08:00 ERROR log.log4j.log4jTest 84 test3 - 自定义pattern参数输出
+2018-11-28 at 10:44:39 GMT+08:00 ERROR log.log4j.log4jTest 84 test3 - 自定义pattern参数输出
+2018-11-28 at 10:56:43 GMT+08:00 ERROR log.log4j.log4jTest 88 test3 - 自定义pattern参数输出
