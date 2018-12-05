@@ -5,7 +5,7 @@
 
 	<groupId>org.mypiglet.test</groupId>
 	<artifactId>springtest</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>springtest</name>
@@ -21,11 +21,36 @@
 		<spring.version>4.3.10.RELEASE</spring.version>
 		<protobuf.version>3.6.1</protobuf.version>
 		<log4j.version>2.11.1</log4j.version>
+		<springboot.version>1.5.6.RELEASE</springboot.version>
+		<javassist.version>3.24.0-GA</javassist.version>
 
 		<testng.version>6.10</testng.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.mypiglet.test</groupId>
+			<artifactId>jdktest</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<!-- 开始 springboot相关 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<version>${springboot.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- 结束 springboot相关 -->
+
+		<!-- 开始 字节码操作相关 -->
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>${javassist.version}</version>
+		</dependency>
+		<!-- 结束 字节码操作相关 -->
+
 		<!-- 开始 mysql驱动 -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -34,7 +59,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- 结束 mysql驱动 -->
-		
+
 		<!-- 开始 数据库连接池 -->
 		<dependency>
 			<groupId>com.zaxxer</groupId>
@@ -43,7 +68,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- 结束 数据库连接池 -->
-		
+
 		<!-- 开始 jdbcTemplate -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -52,7 +77,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- 结束 jdbcTemplate -->
-		
+
 		<!-- 开始 mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -61,7 +86,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- 结束 mybatis -->
-		
+
 		<!-- 开始 protobuf -->
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
@@ -76,7 +101,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- 结束 protobuf -->
-		
+
 		<!-- 开始 log4j2 -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>

@@ -18,7 +18,7 @@ import rpc.protobuf.PersonProbuf.Person.PhoneNumber;
  */
 public class ProtobufTest {
 
-	@Test
+	@Test(enabled = false)
 	public void test() {
 
 		PersonProbuf.Person.Builder builder = PersonProbuf.Person.newBuilder();

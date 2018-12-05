@@ -65,7 +65,7 @@ public class log4jTest {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test3() throws InterruptedException {
 
 		System.setProperty("log4j.configurationFile", "classpath:log/log4j/custom.xml");
